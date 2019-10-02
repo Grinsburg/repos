@@ -5,92 +5,116 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Registration</title>
 </head>
 
 <body>
-    <section class="col-12">
-        <div class="row">
-            <div class="col-4 image-block"></div>
-            <div class="col-8">
-                <div class="reg-block">
-                    <div class="col-12 pt-3 pb-3">
-                        <div class="row justify-content-between pt-3">
-                            <div class="col-5">
-                                <h1>Registration</h1>
-                            </div>
-                            <div class="col-3">
-                                <button class="btn btn-primary" type="button">En</button>
-                                <button class="btn btn-light" type="button">Ru</button>
-                            </div>
-                            <div class="col-12 pt-5">
-                                <form>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputEmail4">Full Name</label>
-                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Full Name">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword4">Position you are applying for</label>
-                                            <input type="text" class="form-control" id="inputPassword4" placeholder="Position you are applying for">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputEmail4">Email</label>
-                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword4">Phone number</label>
-                                            <input type="text" class="form-control" id="inputPassword4" placeholder="Country">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputEmail4">Country</label>
-                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Country">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword4">City</label>
-                                            <input type="password" class="form-control" id="inputPassword4" placeholder="Country">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputEmail4">Password</label>
-                                            <input type="password" class="form-control" id="inputEmail4" placeholder="Password">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputPassword4">Password</label>
-                                            <input type="password" class="form-control" id="inputPassword4" placeholder="Confirm Password">
-                                        </div>
+    <section class="container">
+        <div class="d-flex align-items-center" style="height: 100vh">
+            <div class="col-12">
+                <div class="row shadow">
+                    <div class="col-4 image-block"></div>
+                    <div class="col-8">
+                        <div class="reg-block d-flex justify-content-center">
+                            <div class="col-10 pt-4 pb-4">
+                                <div class="row justify-content-between pt-3">
+                                    <div class="col-5">
+                                        <h1>Registration</h1>
                                     </div>
-                                    <!-- <label for="gender">Gender</label> -->
-                                    <div class="form-group col-12">
-                                        <div class="form-row justify-content-center">
-                                            <div class="form-check col-3">
-                                                <input class="form-check-input" id="gender" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-																													Check me out
-																												</label>
-                                            </div>
-                                            <div class="form-check col-3">
-                                                <input class="form-check-input" id="gender" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-																															Check me out
-																														</label>
-                                            </div>
-                                            <div class="form-check col-3">
-                                                <input class="form-check-input" id="gender" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-																															Check me out
-																														</label>
-                                            </div>
-                                            <div class="form-check col-3">
-                                                <input class="form-check-input" id="gender" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-																																	Check me out
-																																</label>
-                                            </div>
-                                        </div>
+                                    <div class="col-2 d-flex align-items-center lang-item">
+                                        <button class="btn btn-lang active" type="button">En</button>
+                                        <button class="btn btn-lang" type="button">Ru</button>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Sign in</button>
-                                </form>
+                                    <div class="col-12 pt-5">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-6">
+                                                    <label for="inputEmail4">Full Name</label>
+                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Please enter your name">
+                                                </div>
+                                                <div class="form-group col-6">
+                                                    <label for="inputGroupSelect01">Position are you applying for</label>
+                                                    <a tabindex="0" class="popover-link rounded-circle" id="example" role="button" data-toggle="popover" data-trigger="focus" title="Please applying your" data-content="Please select your position"><i class="fas fa-question-circle" ></i></a>
+                                                    <div class="input-group">
+                                                        <select class="custom-select" id="inputGroupSelect01">
+                                                            <option selected>Position are you applying for</option>
+                                                            <option value="1">Junior</option>
+                                                            <option value="2">Middle</option>
+                                                            <option value="3">Senior</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-6">
+                                                    <label for="inputEmail4">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                                </div>
+                                                <div class="form-group col-6">
+                                                    <label for="dropdown">Phone number</label>
+                                                    <div class="input-group" id="dropdown">
+                                                        <div class="input-group-prepend">
+                                                            <button class="btn btn-secondary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                                <div role="separator" class="dropdown-divider"></div>
+                                                                <a class="dropdown-item" href="#">Separated link</a>
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="phone" aria-label="Text input with dropdown button" placeholder="(999) 999-9999">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-6">
+                                                    <label for="inputEmail4">Country</label>
+                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Please enter your country">
+                                                </div>
+                                                <div class="form-group col-6">
+                                                    <label for="inputPassword4">City</label>
+                                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Please enter your city">
+                                                </div>
+                                                <div class="form-group col-6">
+                                                    <label for="inputEmail4">Password</label>
+                                                    <input type="password" class="form-control" id="inputEmail4" placeholder="Password">
+                                                </div>
+                                                <div class="form-group col-6">
+                                                    <label for="inputPassword4">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Confirm Password">
+                                                </div>
+                                            </div>
+                                            <label for="gender">Gender</label>
+                                            <div class="form-group col-12">
+                                                <div class="form-row justify-content-center">
+                                                    <div class="col-12">
+                                                        <div class="row" id="group1">
+                                                            <div class="form-check col-2">
+                                                                <input class="form-check-input" id="maleGender" type="radio" id="gridCheck1" name="group1">
+                                                                <label class="form-check-label" for="maleGender"> Male</label>
+                                                            </div>
+                                                            <div class="form-check col-2">
+                                                                <input class="form-check-input" id="femaleGender" type="radio" id="gridCheck2" name="group1">
+                                                                <label class="form-check-label" for="femaleGender">Female</label>
+                                                            </div>
+                                                            <div class="form-check col-2">
+                                                                <input class="form-check-input" id="oterGender" type="radio" id="gridCheck3" name="group1">
+                                                                <label class="form-check-label" for="oterGender">Other</label>
+                                                            </div>
+                                                            <div class="form-check col-4">
+                                                                <input class="form-check-input" id="notSayGender" type="radio" id="gridCheck4" name="group1">
+                                                                <label class="form-check-label" for="notSayGender">Prefer not to say</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-sign btn-block">Next Step <i class="fas fa-arrow-right"></i> </button>
+                                            <div class="pt-3">
+                                                <p>Already have an account? <a href="#">  Sign in</a></p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -98,10 +122,17 @@
             </div>
         </div>
     </section>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+            $("#phone").mask("(999) 999-9999");
+        });
+    </script>
 </body>
 
 </html>
